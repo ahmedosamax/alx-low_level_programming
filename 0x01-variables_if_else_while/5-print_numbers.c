@@ -7,5 +7,6 @@
 int main(void)
 {
 	for (int num = 0; num < 10 ; num++)
-		putchar(num);
+		printf("%d", num);
+		printf("\n");
 }
