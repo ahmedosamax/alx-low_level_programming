@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* function print alphabet in lowercase
-* the alphabet a-z
-*/
+ * print_alphabet - Entry point
+ * Return:0
+ */
 void print_alphabet(void)
 {
 	int x = 'a';
