@@ -7,7 +7,7 @@ void print_alphabet_x10(void)
 {
 	int y = 0;
 
-	for (; y == 10; y++)
+	for (; y <= 9; y++)
 	{
 		int x = 'a';
 
