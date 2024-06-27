@@ -1,25 +1,26 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * print_square - print square in shape of '#'
- * @size: the input Where n is the number of l of the square should be printed
- * Return: 0 if success
+ * print_square - Print square line dependent on the integer n.
+ * @n : The number of lines using '#' characters to use per row and column
+ * Return: Void.
  */
-void print_square(int size)
+void print_square(int n)
 {
-	int i;
+	int x;
+	int y;
 
-	if (size > 0)
+	for (y = 0; y < n; y++)
 	{
-		for (i = 0; i < size ; i++)
+		for (x = 0; x < n; x++)
 		{
-			int j;
-
-			for (j = 0; j < size; j++)
-				_putchar('#');
-			_putchar('\n');
+			_putchar('#');
 		}
-	}
-	else
 		_putchar('\n');
-	return (0);
+	}
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
 }
