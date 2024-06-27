@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * main - prints the numbers from 1 to 100, followed by a new line
  * but for multiples of three prints Fizz instead of the number
@@ -7,31 +9,28 @@
  */
 int main(void)
 {
-	int n;
+	int i;
 
-	for (n = 1; n < 101; n++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (n % 3 == 0 && n % 5 == 0)
+		if (i % 3 == 0 && i % 5 != 0)
 		{
-			printf("fizzbuzz");
-			putchar(' ');
-		}
-		else if (n % 3 == 0)
+			printf(" Fizz");
+		} else if (i % 5 == 0 && i % 3 != 0)
 		{
-			printf("fizz");
-			putchar(' ');
-		}
-		else if (n % 5 == 0)
+			printf(" Buzz");
+		} else if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("buzz");
-			putchar(' ');
-		}
-		else
+			printf(" FizzBuzz");
+		} else if (i == 1)
 		{
-			printf("%d", n);
-			putchar(' ');
+			printf("%d", i);
+		} else
+		{
+			printf(" %d", i);
 		}
 	}
-	putchar ('\n');
+	printf("\n");
+
 	return (0);
 }
