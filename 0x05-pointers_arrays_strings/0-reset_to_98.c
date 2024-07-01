@@ -1,10 +1,10 @@
 #include"main.h"
 /**
- * reset_to_98 - int function resest the variables to 98
+ * reset_to_98 - void function resest the variables to 98 and doesnt return
  * @n: the pointer use to reset the value to 98
- * Return: 98
+ * Return: 0
  */
 void reset_to_98(int *n)
 {
-	return (*n = 98);
+	*n = 98;
 }
