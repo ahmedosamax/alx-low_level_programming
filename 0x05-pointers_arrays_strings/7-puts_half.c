@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  puts_half - prints the second have of the string
+ *  puts_half - prints the second have of the strings
  * @str: string to be printed
  */
 void puts_half(char *str)
