@@ -13,7 +13,7 @@ char *leet(char *a)
 	for (i = 0; a[i] != '\0'; i++)
 	{
 		for (j = 0; j < 10; j++)
-		{	
+		{
 			if (a[i] == s[j])
 				a[i] = n[j];
 		}
