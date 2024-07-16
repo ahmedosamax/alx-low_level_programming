@@ -29,10 +29,10 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	for (x = 0; x < i ; x++)
 		ptr[x] = s1[x];
-		for (y = 0; y < j; y++)
-		{
-			ptr[x] = s2[y];
-			x++;
-		}
+	for (y = 0; y < j; y++)
+	{
+		ptr[x] = s2[y];
+		x++;
+	}
 	return (ptr);
 }
