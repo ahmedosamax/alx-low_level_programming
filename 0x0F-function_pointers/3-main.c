@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	res = func(i, j);
+	res = ptr(i, j);
 
 	printf("%d\n", res);
 
