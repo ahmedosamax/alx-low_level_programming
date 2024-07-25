@@ -5,30 +5,40 @@
  * @argv: array of arguments
  * Return: 0 if Success
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int x, y, res;
-	int (*op)(int, int);
+	int i, j, res;
+	char c;
+	int (*ptr)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	x = atoi(argv[1]);
-	y = atoi(argv[3]);
-	op = get_op_func(argv[2]);
-	if (argv[2] == NULL)
+
+	i = atoi(argv[1]);
+	j = atoi(argv[3]);
+
+	ptr = get_op_func(argv[2]);
+
+	if (!ptr)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if (y == 0 && (argv[2][0] == '/' || argv[2][0] == '%'))
+
+	c = *argv[2];
+
+	if ((c == '/' || c == '%') && j == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	res = op(x, y);
+
+	res = func(i, j);
+
 	printf("%d\n", res);
+
 	return (0);
 }
