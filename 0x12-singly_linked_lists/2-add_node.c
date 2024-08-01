@@ -3,7 +3,7 @@
  * add_node - adding a new node at the beginning
  * @head: pointer to a pointer of the head of list
  * @str: string to be dub
- * Return: the nudes
+ * Return: the  new node
  */
 list_t *add_node(list_t **head, const char *str)
 {
