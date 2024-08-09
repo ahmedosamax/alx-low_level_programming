@@ -3,8 +3,8 @@
 /**
  * set_bit - set value of given bit in spec index
  * @n: number to be setted
- * @index: index 
- * Return: 1 on success 
+ * @index: index
+ * Return: 1 on success
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
