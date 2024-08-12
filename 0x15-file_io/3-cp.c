@@ -44,7 +44,7 @@ void close_file(int fd)
 
 /**
  * main - Copies the contents of a file to another file.
- * @argc: The number of arguments 
+ * @argc: The number of arguments
  * @argv: array of pointers to argu given.
  * Return: 0 on success.
  */
